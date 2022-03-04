@@ -1,0 +1,100 @@
+#topbar-wrapper{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Change with of sidebar from 0 to 250px */
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+/* Since we added left padding, we need to shrink the width by 250px */
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+
+
+/* Sidebar styling - the entire ul list */
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 5px;
+    line-height: 60px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    background: #233142;
+}
+
+@media (min-width: 765px) {
+    #sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    margin-left: -150px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #455D7A;
+    padding-top: 50px;
+}
+    #page-content-wrapper {
+    padding-top: 80px;
+    padding-left: 50px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #DBE2EF;
+}
+    .container-fluid{
+        height:100%;
+       overflow-y: scroll; 
+}
+    .sidebar-nav li {
+    text-indent: 5px;
+}
+    
+}
+@media (min-width: 1330px) {
+
+
+/* Sidebar */
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    margin-left: 0px;
+    overflow-y: hidden;
+    background: #455D7A;
+    padding-top: 50px;
+}
+
+/* Always take up entire screen */
+#page-content-wrapper {
+    padding-top: 80px;
+    padding-left: 250px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #DBE2EF;
+}
+    .container-fluid{
+        height:100%;
+       overflow-y: hidden; 
+}
+    .sidebar-nav li {
+    text-indent: 20px;
+}

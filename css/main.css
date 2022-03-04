@@ -1,0 +1,84 @@
+
+/* not sidebar */
+body {
+    background: #f9f7f7;
+
+}
+
+.announcements-body {
+    padding: 20px 0;
+    max-height: 300px;
+    overflow-x: auto;
+}
+
+.badge {
+    position: absolute;
+    left: 9.25rem;
+    margin-top: .35em;
+    z-index: 2;
+}
+.navbg{
+    background-color: #112d4e;
+}
+
+.content {
+    width: 100%;
+    padding: 80px 20px 20px 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.left-bar{
+    height: 100%;
+    padding-right: 0;
+    border-right: 1px solid #3f72af;
+}
+.left-bar .list-group-item{
+    border-top-left-radius: .0rem;
+    border-top-right-radius: .0rem;
+    padding: 0;
+    margin: .2rem;
+}
+.brand{
+    color: #f9f7f7;
+    margin-bottom: 0rem;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+.square:before {
+    content:"";
+    position: absolute;
+    right: 11px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #F3F3F3 transparent;
+    z-index:9999;
+}
+.square:after {
+    content:"";
+    position: absolute;
+    right: 4px;
+    top: -17px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 17px 17px 17px;
+    border-color: transparent transparent #4C9DF9 transparent;
+    z-index:9998;
+}
+.square {
+    background: #F3F3F3;
+    border: 8px solid #4C9DF9;
+    box-shadow: 0 3px 3px rgba(0, 0.2, 0.2, 0.2);
+    float: left;
+    position: absolute;
+    margin: 0;
+    top: 2.8em;
+    width: 200px;
+    z-index: 99999;
+}
